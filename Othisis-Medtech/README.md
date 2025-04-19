@@ -36,8 +36,6 @@ Make sure you have the following installed on your machine:
 2. **Install Dependencies**
 
    ```npm install````
-   or
-   ```yarn install````
 
 3. **Run the project**
 
