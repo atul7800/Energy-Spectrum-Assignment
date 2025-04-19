@@ -35,12 +35,14 @@ Make sure you have the following installed on your machine:
 
 2. **Install Dependencies**
 
-   ```npm install````
+   ```badsh
+   npm install
+   ```
 
 3. **Run the project**
 
-   ```npm run dev
-
+   ```bash
+   npm run dev
    ```
 
 4. **_Open your browser_**
