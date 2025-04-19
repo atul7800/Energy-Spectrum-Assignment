@@ -35,10 +35,9 @@ Make sure you have the following installed on your machine:
 
 2. **Install Dependencies**
 
-   ````npm install
+   ```npm install````
    or
-   ```yarn install
-   ````
+   ```yarn install````
 
 3. **Run the project**
 
