@@ -1,0 +1,15 @@
+export {default as rightArrow} from "./rightArrow.png";
+export {default as newIcon} from "./new.png";
+export {default as calendar} from "./calendar.png";
+export {default as file} from "./file.png";
+export {default as person} from "./person.png";
+export {default as setting} from "./setting.png";
+export {default as notifications} from "./notifications.png";
+export {default as personNav} from "./personNav.png";
+export {default as dropdownArrow} from "./dropdownArrow.png";
+export {default as logo} from "./logo.png";
+export {default as searchIcon} from "./search.png";
+export {default as info} from "./info.png";
+export {default as mic} from "./mic.png";
+export {default as deleteIcon} from "./delete.png";
+export {default as exportIcon} from "./export.png";

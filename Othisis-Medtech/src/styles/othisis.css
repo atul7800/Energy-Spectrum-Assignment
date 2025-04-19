@@ -1,0 +1,90 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1394px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.layout {
+  width: 100%;
+  height: calc(100vh - 110px);
+  position: relative;
+  overflow: hidden;
+}
+
+.middleContainer {
+  width: 100%;
+  padding: 20px 20px 0 0;
+  box-sizing: border-box;
+}
+
+.leftRightPannelsContainer {
+  display: flex;
+  height: calc(100vh - 208px);
+  gap: 20px;
+  padding-left: 20px;
+  margin-left: 64px;
+  box-sizing: border-box;
+}
+
+.leftPannel {
+  flex: 0 0 24.3%;
+  max-width: 315px;
+  box-sizing: border-box;
+}
+
+.rightPannel {
+  flex: 1;
+  max-width: 981px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.sideNavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: calc(100vh - 156px);
+  position: absolute;
+  top: 32px;
+  left: 0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.bottomContainer {
+  width: 100%;
+}
+
+.saveReferBtns {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.referBtn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 16px 32px;
+  width: 170px;
+}
+
+.saveNoteBtn {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 16px 32px;
+  width: 170px;
+}

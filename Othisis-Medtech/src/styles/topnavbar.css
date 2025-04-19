@@ -1,0 +1,29 @@
+.navBar {
+  height: 64px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.logoContainer {
+  width: 213px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navIconsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.personIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
