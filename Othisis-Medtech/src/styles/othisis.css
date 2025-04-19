@@ -13,7 +13,7 @@
 
 .layout {
   width: 100%;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 90px);
   position: relative;
   overflow: hidden;
 }
@@ -26,7 +26,7 @@
 
 .leftRightPannelsContainer {
   display: flex;
-  height: calc(100vh - 208px);
+  height: calc(100vh - 174px);
   gap: 20px;
   padding-left: 20px;
   margin-left: 64px;
@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
   width: 64px;
-  height: calc(100vh - 156px);
+  height: calc(100vh - 122px);
   position: absolute;
   top: 32px;
   left: 0;
@@ -61,6 +61,8 @@
 
 .bottomContainer {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .saveReferBtns {
@@ -68,7 +70,7 @@
   gap: 15px;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 16px 20px;
 }
 
 .referBtn {

@@ -9,11 +9,11 @@ export default function TopNavbar() {
         <img src={logo} alt="logo" />
       </div>
       <div className="navIconsContainer">
-        <div className="navIcons">
+        <div className="navIcons btns">
           <img src={notifications} alt="notifications icon" />
         </div>
         <div className="personIconContainer">
-          <div className="personIcon">
+          <div className="personIcon btns">
             <span className="person">
               <img src={personNav} alt="person icon" />
             </span>

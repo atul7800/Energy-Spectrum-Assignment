@@ -111,12 +111,6 @@
   transition: border 0.2s ease;
 }
 
-.infoCardContainer {
-  position: relative;
-  overflow-y: auto;
-  max-height: 400px; /* Adjust height based on your needs */
-}
-
 .infoCard {
   transition: transform 0.3s ease-in-out; /* Transition to animate the movement */
   position: relative;
@@ -129,4 +123,3 @@
 .infoCard + .infoCard {
   margin-top: 10px; /* Adjust for spacing */
 }
-
