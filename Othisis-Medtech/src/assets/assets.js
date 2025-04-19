@@ -13,3 +13,4 @@ export {default as info} from "./info.png";
 export {default as mic} from "./mic.png";
 export {default as deleteIcon} from "./delete.png";
 export {default as exportIcon} from "./export.png";
+export {default as editIcon} from "./edit.png";

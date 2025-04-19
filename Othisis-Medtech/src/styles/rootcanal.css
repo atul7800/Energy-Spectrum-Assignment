@@ -1,12 +1,10 @@
 .rootCanalContainer {
   width: 100%;
   height: 100%;
-  background-color: rgba(227, 227, 227, 1);
+  background-color: rgba(236, 236, 236, 1);
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 15px 35px 15px 35px;
-  display: flex;
-  justify-content: space-between;
+  padding: 15px 17px 15px 35px;
 }
 
 .sectionTitle {
@@ -29,6 +27,13 @@
   align-items: center;
 }
 
+.titleAndBtnsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .btns {
   display: flex;
   justify-content: space-between;
@@ -49,9 +54,79 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  cursor: pointer;
 }
 
 .exportAndDel {
   display: flex;
   gap: 25px;
 }
+
+.infoIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.infoCard ul {
+  margin: 2px;
+}
+
+.infoTitle {
+  font-weight: bold;
+  margin: 0;
+}
+
+.infoCard {
+  background-color: rgba(236, 236, 236, 1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 15px 0;
+  max-width: 50%;
+}
+
+.infoCardContainer::-webkit-scrollbar {
+  width: 6px; /* scrollbar width */
+}
+
+.infoCardContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255); /* Scrollbar thumb color */
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.infoCardContainer::-webkit-scrollbar-track {
+  background-color: black; /* track background */
+  border-radius: 3px;
+}
+
+.infoCardContainer {
+  background-color: white;
+  padding: 25px 10px 10px 20px;
+  height: calc(100vh - 340px);
+  overflow-y: auto;
+  margin-top: 15px;
+  border: 2px dashed transparent;
+  transition: border 0.2s ease;
+}
+
+.infoCardContainer {
+  position: relative;
+  overflow-y: auto;
+  max-height: 400px; /* Adjust height based on your needs */
+}
+
+.infoCard {
+  transition: transform 0.3s ease-in-out; /* Transition to animate the movement */
+  position: relative;
+}
+
+.infoCard.dragging {
+  opacity: 0.5; /* Optional: Add a slight fade when dragging */
+}
+
+.infoCard + .infoCard {
+  margin-top: 10px; /* Adjust for spacing */
+}
+

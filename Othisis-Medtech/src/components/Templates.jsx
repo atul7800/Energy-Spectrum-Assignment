@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "../styles/templates.css";
-import {searchIcon} from "../assets/assets";
+import {searchIcon, editIcon} from "../assets/assets";
 
 export default function Templates() {
   const [templates, setTemplates] = useState([
@@ -34,6 +34,10 @@ export default function Templates() {
     }
   }, [searchQuery]);
 
+  const handleDragStart = (e, template) => {
+    e.dataTransfer.setData("text/plain", template); // Store the template title in the dataTransfer object
+  };
+
   const search = () => {
     if (!searchQuery.trim()) {
       setFilteredTemplates(templates);
@@ -46,26 +50,39 @@ export default function Templates() {
   };
 
   return (
-    <div className="templateContainer">
-      <h2>Template</h2>
-      <div className="optionsContainer">
-        <div className="template search">
-          <input
-            type="text"
-            placeholder="Search Templates"
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <span style={{cursor: "pointer"}} onClick={() => search()}>
-            <img src={searchIcon} alt="" />
-          </span>
-        </div>
+    <div className="wrapperContainer">
+      <div className="templateContainer">
+        <h2>Template</h2>
+        <div className="optionsContainer">
+          <div className="template search">
+            <input
+              type="text"
+              placeholder="Search Templates"
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <span style={{cursor: "pointer"}} onClick={() => search()}>
+              <img src={searchIcon} alt="" />
+            </span>
+          </div>
 
-        <div className="templateOptions">
-          {filteredTemplates.map((template, index) => (
-            <div key={index} className="template">
-              {template}
-            </div>
-          ))}
+          <div className="templateOptions">
+            {filteredTemplates.map((template, index) => (
+              <div
+                key={index}
+                className="template"
+                draggable={true}
+                onDragStart={(e) => handleDragStart(e, template)}
+              >
+                {template}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="editController">
+        <div>
+          Edit
+          <img src={editIcon} alt="edit" />
         </div>
       </div>
     </div>
